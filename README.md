@@ -8,11 +8,13 @@
 
 [Исследование возможностей генерации текста с помощью рекуррентных нейронных сетей с учетом контекста](#laboratory-work-3)
 
-## Анализ и прогнозирование климатических изменений с использованием методов искусственного интеллекта <a href="#laboratory-work-1"></a>
+---
+
+# <a id="laboratory-work-1">Анализ и прогнозирование климатических изменений с использованием методов искусственного интеллекта</a>
 
 [![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)](https://colab.research.google.com/drive/1rCXgNbDGgrqX6bAXGgkaKzdfdX09_kvN#scrollTo=yJ1cnLtcjf5U)
 
-### Принцип работы
+## Принцип работы
 
 Проект представляет собой модель машинного обучения для предсказания максимальной температуры c использованием метода Ridge регрессии.
 
@@ -24,12 +26,7 @@
 
 ![Docs](./images/photo_2024-01-12_13-39-30.jpg)
 
-
-## Извлечение ключевых слов из текста: сравнение методов на основе статистики и машинного обучения <a href="#laboratory-work-2"></a>
-
-[![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)](https://colab.research.google.com/drive/1MG6T7wXeavZjV1u88ApgUcEQ-SJbfC_S?usp=sharing)
-
-### Установка
+## Установка
 
 Запустите скрипт:
 
@@ -42,7 +39,13 @@ pip install nbconvert
 jupyter nbconvert --to notebook --execute weather.ipynb
 ```
 
-### Принцип работы
+---
+
+# <a id="laboratory-work-2">Извлечение ключевых слов из текста: сравнение методов на основе статистики и машинного обучения</a>
+
+[![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)](https://colab.research.google.com/drive/1MG6T7wXeavZjV1u88ApgUcEQ-SJbfC_S?usp=sharing)
+
+## Принцип работы
 
 В качестве примера я использовал метод **TF-IDF** и **LDA**.
 
@@ -50,7 +53,7 @@ jupyter nbconvert --to notebook --execute weather.ipynb
 
 **Latent Dirichlet Allocation (LDA):** Это вероятностная модель, используемая для выявления тем в коллекции текстов. LDA предполагает, что каждый документ может быть представлен как смесь различных тем, а каждая тема может быть представлена как смесь различных слов. Модель основывается на предположении, что слова в документе связаны с его темой.
 
-### Установка
+## Установка
 
 Установите зависимости:
 
@@ -69,7 +72,7 @@ pip install nbconvert
 jupyter nbconvert --to notebook --execute keywords_extracting_based_on_TF_IDF_and_LDA.ipynb
 ```
 
-### Использование
+## Использование
 
 По умолчанию, шумовые слова удаляются на английском языке. Если вы хотите использовать текст, написанный на другом языке, замените английский язык на предпочитаемый.
 
@@ -85,11 +88,13 @@ input_text = """
 """
 ```
 
-## Извлечение ключевых слов из текста: сравнение методов на основе статистики и машинного обучения <a href="#laboratory-work-2"></a>
+---
+
+# <a id="laboratory-work-3">Исследование возможностей генерации текста с помощью рекуррентных нейронных сетей с учетом контекста</a>
 
 [![Colab](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)](https://www.kaggle.com/code/guiltyaxeil/text-generator-using-lstm)
 
-### Принцип работы
+## Принцип работы
 
 В качестве входных данных используются новостные заголовки [New York Times](https://www.kaggle.com/datasets/aashita/nyt-comments).
 
@@ -97,7 +102,7 @@ input_text = """
 
 После завершения обучения модель становится способной генерировать новые текстовые последовательности на основе введенного начального текста. Это достигается передачей начальной последовательности токенов через обученную модель, которая затем предсказывает следующий токен. Этот процесс может быть повторен для генерации более длинных текстовых последовательностей.
 
-### Использование
+## Использование
 
 Запустить модель с предустановленными данными можно по [ссылке](https://www.kaggle.com/code/guiltyaxeil/text-generator-using-lstm) в связи с необходимостью обработки больших объемов входных данных.
 
